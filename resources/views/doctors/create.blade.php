@@ -8,7 +8,7 @@
     </style>
     <div class="card uper">
         <div class="card-header">
-            Add Patient
+            Add Doctor
         </div>
         <div class="card-body">
             @if ($errors->any())
@@ -20,7 +20,7 @@
                     </ul>
                 </div><br />
             @endif
-            <form method="post" action="{{ route('patients.store') }}">
+            <form method="post" action="{{ route('doctors.store') }}">
                 <div class="form-group">
                     @csrf
                     <label for="name">First Name:</label>
@@ -42,6 +42,19 @@
                     <label for="quantity">Email</label>
                     <input type="text" class="form-control" name="email"/>
                 </div>
+                <div class="form-group">
+                    <label for="quantity">Start Work</label>
+                    <input type="text" class="form-control" name="start_work"/>
+                </div>
+                <div class="form-group">
+                    <label for="quantity">Finish Work</label>
+                    <input type="text" class="form-control" name="finish_work"/>
+                </div>
+                <div class="form-group">
+                    <label for="quantity">Vacation</label>
+                    <input type="text" class="form-control" name="vacation"/>
+                </div>
+
                 <button type="submit" class="btn btn-primary">Add</button>
             </form>
         </div>

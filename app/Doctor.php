@@ -13,6 +13,7 @@ class Doctor extends Model
         'mobile',
         'email',
         'start_work',
-        'finish_work'
+        'finish_work',
+        'vacation'
     ];
 }

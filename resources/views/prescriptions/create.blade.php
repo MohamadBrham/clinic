@@ -20,28 +20,21 @@
                     </ul>
                 </div><br />
             @endif
-            <form method="post" action="{{ route('patients.store') }}">
+            <form method="post" action="{{ route('prescriptions.store') }}">
                 <div class="form-group">
                     @csrf
-                    <label for="name">First Name:</label>
-                    <input type="text" class="form-control" name="first_name"/>
+                    <label for="name">Doctor ID:</label>
+                    <input type="text" class="form-control" name="doctor_id"/>
                 </div>
                 <div class="form-group">
-                    <label for="name">Last Name:</label>
-                    <input type="text" class="form-control" name="last_name"/>
+                    <label for="name">Patient ID:</label>
+                    <input type="text" class="form-control" name="patient_id"/>
                 </div>
                 <div class="form-group">
-                    <label for="price">Gender :</label>
-                    <input type="text" class="form-control" name="sex"/>
+                    <label for="name">Description :</label>
+                    <input type="text" class="form-control" name="description"/>
                 </div>
-                <div class="form-group">
-                    <label for="quantity">Mobile</label>
-                    <input type="text" class="form-control" name="mobile"/>
-                </div>
-                <div class="form-group">
-                    <label for="quantity">Email</label>
-                    <input type="text" class="form-control" name="email"/>
-                </div>
+
                 <button type="submit" class="btn btn-primary">Add</button>
             </form>
         </div>
