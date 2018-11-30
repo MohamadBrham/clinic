@@ -10,6 +10,9 @@
 <body>
 <div class="container">
     @yield('content')
+    <br />
+    <br />
+    <a href="/" class="btn">HOME</a>
 </div>
 <script src="{{ asset('js/app.js') }}" type="text/js"></script>
 </body>
